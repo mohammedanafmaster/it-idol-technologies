@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page [Assignment-3]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png"
+                        alt="Bootstrap" width="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="landing-section">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1707334460053-dc1af3494b73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100 img-fluid custom-height" alt="Mountain with sky full of stars">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Mountains with sky full of stars</h5>
+                            <p>The location is Ordesa Valley, Spain and credit goes to Marek Piwnicki.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1705660416189-132f67752e17?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100 img-fluid custom-height"
+                            alt="Snow Mountains with valley in the bottom">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Snow Mountains with valley in the bottom</h5>
+                            <p>The location is Faroe Islands and credit goes to Maria Teneva.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1706216281170-1ca5b17b96a2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100 img-fluid custom-height" alt="Sand Canyon with spectacular look">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sand Canyon with spectacular look</h5>
+                            <p>The location is Antelope Canyon, Arizona, USA and credit goes to Pete Alexopoulos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1703186882546-d1b1a7ff4fc8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100 img-fluid custom-height" alt="A cave inside cliff near the ocean">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>A cave inside cliff near the ocean</h5>
+                            <p>The location is Milos, Grèce and credit goes to Raphael Peillon.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="products-section">
+            <div class="container mt-4">
+                <ul class="nav nav-tabs" id="productTabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="men-tab" data-toggle="tab" href="#men">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="women-tab" data-toggle="tab" href="#women">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="kids-tab" data-toggle="tab" href="#kids">Kids</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content mt-2">
+                    <div class="tab-pane fade show active" id="all">
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/61vOh+WsVpL._SY879_.jpg" height="200"
+                                        class="card-img-top object-fit-contain" alt="Van Huesen Men's Formal Shirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Van Huesen Men's Formal Shirt</h5>
+                                        <span class="badge text-bg-primary mb-2">Men</span>
+                                        <p class="card-text">Material composition: 100% Cotton,
+                                            Pattern: Solid,
+                                            Fit type: Slim Fit,
+                                            Sleeve type: Long Sleeve,
+                                            Collar style: Classic collar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/71LC6fnYJXL._SX679_.jpg" height="200"
+                                        class="card-img-top object-fit-contain"
+                                        alt="Harpa Women's Plain Regular fit Top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Harpa Women's Plain Regular fit Top</h5>
+                                        <span class="badge text-bg-primary mb-2">Women</span>
+                                        <p class="card-text">Pattern: Solid,
+                                            Fit type: Regular Fit,
+                                            Sleeve type: Short Sleeve,
+                                            Collar style: Collarless,
+                                            Neck style: Round Neck</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 20rem;">
+                                    <img src="https://m.media-amazon.com/images/I/71y11eKgRfL._SY879_.jpg" height="200"
+                                        class="card-img-top object-fit-contain"
+                                        alt="Alan Jones Clothing Boys Hoodies Sweatshirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alan Jones Clothing Boys Hoodies Sweatshirt</h5>
+                                        <span class="badge text-bg-primary mb-2">Kids</span>
+                                        <p class="card-text">Material composition: 60% Cotton, 40% Polyester,
+                                            Sleeve type: Long Sleeve,
+                                            Material type: Cotton Blend,
+                                            Fit type: Regular,
+                                            Neck style: Hooded Neck</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/71eUwDk8z+L._SY879_.jpg" height="200"
+                                        class="card-img-top object-fit-contain"
+                                        alt="Allen Solly Men's Regular Fit Polo">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Allen Solly Men's Regular Fit Polo</h5>
+                                        <span class="badge text-bg-primary mb-2">Men</span>
+                                        <p class="card-text">Material composition: 60% Cotton, 40% Polyester,
+                                            Pattern: Solid,
+                                            Fit type: Regular Fit,
+                                            Sleeve type: Half Sleeve,
+                                            Collar style: Band Collar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/71t9w2XZBNL._SY879_.jpg" height="200"
+                                        class="card-img-top object-fit-contain"
+                                        alt="Levi's Women's Regular Fit Brand Logo T-Shirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Levi's Women's Regular Fit Brand Logo T-Shirt</h5>
+                                        <span class="badge text-bg-primary mb-2">Women</span>
+                                        <p class="card-text">Material composition: 100% BCI COMPACT COTTON, SINGLE
+                                            JERSEY, 160 GSM,
+                                            Sleeve type: Short Sleeve,
+                                            Collar style: Collarless</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="men">
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/61vOh+WsVpL._SY879_.jpg" height="200"
+                                        class="card-img-top object-fit-contain" alt="Van Huesen Men's Formal Shirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Van Huesen Men's Formal Shirt</h5>
+                                        <p class="card-text">Material composition: 100% Cotton,
+                                            Pattern: Solid,
+                                            Fit type: Slim Fit,
+                                            Sleeve type: Long Sleeve,
+                                            Collar style: Classic collar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/81Uaa6osdJL._SY879_.jpg" height="200"
+                                        class="card-img-top object-fit-contain"
+                                        alt="INKAST Men's Cotton Casual Shirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">INKAST Men's Cotton Casual Shirt</h5>
+                                        <p class="card-text">Material composition: 100% Cotton,
+                                            Pattern: Solid,
+                                            Fit type: Slim Fit,
+                                            Sleeve type: Long Sleeve,
+                                            Collar style: Classic collar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 20rem;">
+                                    <img src="https://m.media-amazon.com/images/I/61JHFdsxwiL._SX679_.jpg" height="200"
+                                        class="card-img-top object-fit-contain"
+                                        alt="Veirdo® U Neck Black Printed Vest">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Veirdo® U Neck Black Printed Vest</h5>
+                                        <p class="card-text">Material composition: 100% Cotton,
+                                            Neck style: Round Neck,
+                                            Fit type: Regular Fit,
+                                            Sleeve type: No Sleeve
+                                            Closure type: Pull On</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/71eUwDk8z+L._SY879_.jpg" height="200"
+                                        class="card-img-top object-fit-contain"
+                                        alt="Allen Solly Men's Regular Fit Polo">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Allen Solly Men's Regular Fit Polo</h5>
+                                        <p class="card-text">Material composition: 60% Cotton, 40% Polyester,
+                                            Pattern: Solid,
+                                            Fit type: Regular Fit,
+                                            Sleeve type: Half Sleeve,
+                                            Collar style: Band Collar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/81Ey+UJyIIL._SY879_.jpg" height="200"
+                                        class="card-img-top object-fit-contain"
+                                        alt="Dennis Lingo Men's Solid Slim Fit Casual Shirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dennis Lingo Men's Solid Slim Fit Casual Shirt</h5>
+                                        <p class="card-text">Material composition: 100% Cotton,
+                                            Pattern: Denim,
+                                            Fit type: Slim Fit,
+                                            Sleeve type: Long Sleeve,
+                                            Collar style: Mandarin Collar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="women">
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/516dwe8RYNL._SX679_.jpg"
+                                        height="200" class="card-img-top object-fit-contain"
+                                        alt="Bewakoof Women's Typography T-Shirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bewakoof Women's Typography T-Shirt</h5>
+                                        <p class="card-text">Material composition: Cotton,
+                                            Fit type: Oversized Fit,
+                                            Sleeve type: Half Sleeve,
+                                            Collar style: Collarless,
+                                            Neck style: Round Neck</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/71LC6fnYJXL._SX679_.jpg" height="200" class="card-img-top object-fit-contain" alt="Harpa Women's Plain Regular fit Top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Harpa Women's Plain Regular fit Top</h5>
+                                        <p class="card-text">Pattern: Solid,
+                                            Fit type: Regular Fit,
+                                            Sleeve type: Short Sleeve,
+                                            Collar style: Collarless,
+                                            Neck style: Round Neck</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 20rem;">
+                                    <img src="https://m.media-amazon.com/images/I/61tP-UVED7L._SX569_.jpg" height="200" class="card-img-top object-fit-contain" alt="Bewakoof Official Disney Merchandise T-Shirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bewakoof Official Disney Merchandise T-Shirt</h5>
+                                        <p class="card-text">Material composition: 100% cotton,
+                                            Pattern: Graphic,
+                                            Fit type: Relaxed Fit,
+                                            Sleeve type: Half Sleeve,
+                                            Collar style: Collarless</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/61EauoAx9CL._SY741_.jpg" height="200" class="card-img-top object-fit-contain" alt="
+                                    Allen Solly Women Blouse Black">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Allen Solly Women Blouse Black</h5>
+                                        <p class="card-text">Material composition: 100% Viscose,
+                                            Pattern: Printed,
+                                            Fit type: Regular Fit,
+                                            Sleeve type: Short Sleeve,
+                                            Collar style: Collarless</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/71t9w2XZBNL._SY879_.jpg" height="200" class="card-img-top object-fit-contain" alt="Levi's Women's Regular Fit Brand Logo T-Shirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Levi's Women's Regular Fit Brand Logo T-Shirt</h5>
+                                        <p class="card-text">Material composition: 100% BCI COMPACT COTTON, SINGLE JERSEY, 160 GSM,
+                                            Sleeve type: Short Sleeve,
+                                            Collar style: Collarless</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="kids">
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 20rem;">
+                                    <img src="https://m.media-amazon.com/images/I/61y+822IfqL._SY879_.jpg"
+                                        height="200" class="card-img-top object-fit-contain"
+                                        alt="Alan Jones Clothing Hooded Sweatshirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alan Jones Clothing Hooded Sweatshirt</h5>
+                                        <p class="card-text">Material composition: 60% Cotton, 40% Polyester,
+                                            Sleeve type: Long Sleeve,
+                                            Material type: Polycotton,
+                                            Fit type: Regular,
+                                            Neck style: Hooded Neck</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 20rem;">
+                                    <img src="https://m.media-amazon.com/images/I/71GbSWIv27L._SY879_.jpg" height="200" class="card-img-top object-fit-contain" alt="Alan Jones Clothing Hooded Sweatshirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alan Jones Clothing Hooded Sweatshirt</h5>
+                                        <p class="card-text">Material composition: 60% Cotton, 40% Polyester,
+                                            Sleeve type: Long Sleeve,
+                                            Material type: Cotton Blend,
+                                            Fit type: Regular,
+                                            Length: Standard Length</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 20rem;">
+                                    <img src="https://m.media-amazon.com/images/I/71y11eKgRfL._SY879_.jpg" height="200" class="card-img-top object-fit-contain" alt="Alan Jones Clothing Boys Hoodies Sweatshirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alan Jones Clothing Boys Hoodies Sweatshirt</h5>
+                                        <p class="card-text">Material composition: 60% Cotton, 40% Polyester,
+                                            Sleeve type: Long Sleeve,
+                                            Material type: Cotton Blend,
+                                            Fit type: Regular,
+                                            Neck style: Hooded Neck</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://m.media-amazon.com/images/I/61qNTAe3u6L._SY879_.jpg" height="200" class="card-img-top object-fit-contain" alt="Alan Jones Oversized Hooded Sweatshirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alan Jones Oversized Hooded Sweatshirt</h5>
+                                        <p class="card-text">Material composition: 60% Cotton, 40% Polyester,
+                                            Sleeve type: Long Sleeve,
+                                            Material type: Cotton Blend,
+                                            Fit type: Loose</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card" style="width: 20rem;">
+                                    <img src="https://m.media-amazon.com/images/I/71lgB1T6HUL._SY879_.jpg" height="200" class="card-img-top object-fit-contain" alt="Alan Jones Hooded Sweatshirt">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alan Jones Hooded Sweatshirt</h5>
+                                        <p class="card-text">Material composition: 60% Cotton, 40% Polyester,
+                                            Sleeve type: Long Sleeve,
+                                            Material type: Cotton Blend,
+                                            Fit type: Regular,
+                                            Length: Standard Length,
+                                            Neck style: Hooded Neck</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq-section" class="my-5">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Can I cancel my subscription at anytime?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Sure. Your paid subscription can be cancelled anytime by shifting to Lite plan.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Can I change my plan later on?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Absolutely! You can upgrade or downgrade your plan anytime. The money paid for the previous
+                            subscription will be recalculated to the new plan.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Will you renew my subscription automatically?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Yes, your subscription will be automatically renewed according to your pay period.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Do you offer any discounts?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Yes! We offer 17% discount for payment per year. There may be other temporary discounts,
+                            check for this inside the service.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Can I request a refund?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Sure, you will be welcome to request your refund within 14 days of subscribing to any paid
+                            plan.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="float-section">
+            <div class="container col-xxl-12 pb-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Scenery with Snow Mountains, Forest,
+                            and a
+                            Lake</h1>
+                        <p class="lead">No matter what time of year you visit, the Hintesee is a great place to relax
+                            and enjoy the beauty of the Bavarian Alps. The location is Hintersee, Ramsau bei
+                            Berchtesgaden, Deutschland and credit goes to Philipp.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Travel
+                                Now</button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Explore More</button>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1707347566125-e24f520e2dab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block mx-lg-auto img-fluid" alt="Scenery with Snow Mountains, Forest, and a Lake"
+                            width="720">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img
+                                            src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/bootstrap-5-logo-icon.png"
+                                            width="75" class="img-fluid" alt="logo"></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Bootstrap is a free, open source front-end development framework for the creation
+                                        of websites and web apps. Designed to enable responsive development of
+                                        mobile-first websites, Bootstrap provides a collection of syntax for template
+                                        designs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Policy Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Expert Team</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Latest News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://kit.fontawesome.com/43af46c238.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
