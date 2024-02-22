@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Dislike Counter using Increment and Decrement Operators</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            height: 100vh;
+            align-items: center;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        button {
+            background-color: orangered;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 5px 5px 25px #000;
+            color: white;
+            cursor: pointer;
+            font-size: 32px;
+            padding: 7.5px 15px;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>The number of likes are: <span id="showLikes">0</span> and dislikes are: <span id="showDislikes">0</span></p>
+    </div>
+    <div>
+        <button type="button" id="increaseLikes">Like</button>
+        <button type="button" id="increaseDislikes">Dislike</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
