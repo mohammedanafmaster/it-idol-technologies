@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap div on swap button</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 10rem;
+        }
+
+        .container1, .container2 {
+            height: 250px;
+            width: 250px;
+        }
+        
+        .container1 {
+            background-color: rgb(35, 201, 201);
+            color: red;
+        }
+
+        .container2 {
+            background-color: rgb(29, 143, 143);
+            color: yellow;
+        }
+
+        button {
+            background-color: blue;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 10px;
+            position: relative;
+            left: 46.5%;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1" id="container1">I am first container</div>
+        <div class="container2" id="container2">I am second container</div>
+    </div>
+
+    <button type="button" id="swapButton">Swap</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>

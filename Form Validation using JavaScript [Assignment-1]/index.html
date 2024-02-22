@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation using JavaScript [Assignment-1]</title>
+    <style>
+        .input-control .error {
+            color: #ff3860;
+            font-size: 9px;
+            height: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <div class="input-control">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender"><label for="male">Male</label>
+                <input type="radio" id="female" name="gender"><label for="female">Female</label>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="state">State</label>
+                <select id="state">
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CT">Chhattisgarh</option>
+                    <option value="GA" selected>Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="GA">Goa</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OR">Odisha</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="TG">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UT">Uttarakhand</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="WB">West Bengal</option>
+                    <option value="AN">Andaman and Nicobar Islands</option>
+                    <option value="CH">Chandigarh</option>
+                    <option value="DN">Dadra and Nagar Haveli</option>
+                    <option value="DD">Daman and Diu</option>
+                    <option value="DL">Delhi</option>
+                    <option value="LD">Lakshadweep</option>
+                    <option value="PY">Puducherry</option>
+                </select>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="city">City</label>
+                <input type="text" placeholder="Enter your city" id="city">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="confirmPassword">Confirm Password</label>
+                <input id="confirmPassword" name="confirmPassword" type="password">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="message">About</label>
+                <textarea name="message" id="textarea" cols="30" rows="2"></textarea>
+                <div class="error"></div>
+            </div>
+
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+    <script defer src="./script.js"></script>
+</body>
+
+</html>
