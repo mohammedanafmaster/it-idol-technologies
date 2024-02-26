@@ -15,7 +15,7 @@
                     <label for="firstName">First Name</label>
                 </th>
                 <td>
-                    <input type="text" id="firstName" placeholder="Enter your first name" required pattern="^[A-Za-z]$">
+                    <input type="text" id="firstName" placeholder="Enter your first name" required pattern="^[A-Za-z]+$">
                 </td>
             </tr>
 
@@ -24,7 +24,7 @@
                     <label for="lastName">Last Name</label>
                 </th>
                 <td>
-                    <input type="text" id="lastName" placeholder="Enter your last name" required pattern="^[A-Za-z]$">
+                    <input type="text" id="lastName" placeholder="Enter your last name" required pattern="^[A-Za-z]+$">
                 </td>
             </tr>
 
@@ -33,7 +33,7 @@
                     <label for="email">Email</label>
                 </th>
                 <td>
-                    <input type="email" id="email" placeholder="Enter your email address" required pattern="^[a-z0-9]+@+[a-z]+/.+[a-z]$">
+                    <input type="email" id="email" placeholder="Enter your email address" required pattern="^[a-z0-9]+@[a-z]+\.+[a-z]+$">
                 </td>
             </tr>
 
@@ -42,8 +42,8 @@
                     <label for="gender">Gender</label>
                 </th>
                 <td>
-                    <input type="radio" id="male" name="gender" required><label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" required><label for="female">Female</label>
+                    <input type="radio" id="male" name="gender"><label for="male">Male</label>
+                    <input type="radio" id="female" name="gender"><label for="female">Female</label>
                 </td>
             </tr>
 
@@ -116,7 +116,7 @@
                     <label for="dob">Date of Birth</label>
                 </th>
                 <td>
-                    <input type="date" id="dob" required pattern="^{18, 99}$">
+                    <input type="date" id="dob" required max="2006-02-09">
                 </td>
             </tr>
 
@@ -156,7 +156,7 @@
                 </td>
             </tr>
         </table>
-        <input type="button" value="Submit">
+        <input type="submit" value="Submit">
     </form>
 </body>
 

@@ -1,15 +1,23 @@
-// Declare variable and take input from the user
-let input = prompt("Enter a number: ");
+// Take number as an input from the user
+let number = prompt("Enter a number: ");
 
-// By default, assign true to the declared variable
-let isPrime = true;
+// Set the default value to 'true'
+isPrime = true;
 
-// Check if the input is divisible by any number apart from 1 and itself or not using for loop
-for (let i=2 ; i<input ; i++) {
-    if(input % i == 0) {
+// Check if the number is getting divided by values other than 1 and the number itself
+for (let i=2 ; i<number ; i++) {
+
+    // If it gets divided, it will return 0 as the remainder. In this case; change the default value to 'false' (indicating, it is not a prime number)
+    if (number%i==0)
         isPrime = false;
-    }
 }
 
-// Print the output
-let result = isPrime == false ? console.log("It is not a prime number.") : console.log("It is a prime number.");
+// Print this if the number is prime
+if (isPrime) {
+    console.log("It is a prime number.")
+}
+
+// Print this if the number is not prime
+else {
+    console.log("It is not a prime number.")
+}
