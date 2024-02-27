@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap div with all the elements on swap button</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .div1 {
+            background-color: aqua;
+            color: brown;
+            width: 100px;
+            height: 100px;
+        }
+
+        .div2 {
+            background-color: chartreuse;
+            color: coral;
+            width: 100px;
+            height: 100px;
+        }
+
+        button {
+            margin: 10px 5rem;
+        }
+    </style>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="div1" id="div1">I am a container</div>
+        <div class="div2" id="div2">I am a container</div>
+    </div>
+
+    <button id="swapButton">Swap</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,12 +1,5 @@
-// Declare both the variables
-let number1, number2;
+// Take 2 numbers as input from the user
+let number1 = prompt("Enter first number: "), number2 = prompt("Enter second number: ");
 
-// Take input from the user
-number1 = prompt("Enter your first number: ");
-number2 = prompt("Enter your second number: ");
-
-// Calculate power
-result = number1 ** number2;
-
-// Print the output
-console.log(result);
+// Use exponentiation and print the output to the console
+console.log(number1 ** number2)
